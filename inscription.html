@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion / Inscription - PME CONNECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <div class="logo-circle">Logo</div>
+                <span class="brand-name">PME CONNECT</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="#">À propos</a>
+                <a href="#">Services</a>
+                <a href="#">Contacts</a>
+            </nav>
+            <div>
+                <a href="index.html" class="btn-connect">Retour</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container auth-section">
+        <div class="auth-wrapper">
+            
+            <div class="auth-box register-box">
+                <h2>Créer un compte PME</h2>
+                <p class="auth-subtitle">Inscrivez votre entreprise pour accéder aux services en ligne.</p>
+                
+                <form action="dashbord.html" method="POST" class="auth-form">
+                    <div class="form-group">
+                        <label for="reg-company">Nom de l'entreprise / Raison sociale</label>
+                        <input type="text" id="reg-company" name="company_name" placeholder="Ex: Gabon Services SARL" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-nif">Numéro NIF ou Numéro d'Agrément (Optionnel)</label>
+                        <input type="text" id="reg-nif" name="company_nif" placeholder="Ex: 1234567 A">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-email">Adresse Email professionnelle</label>
+                        <input type="email" id="reg-email" name="email" placeholder="contact@votreentreprise.ga" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-password">Mot de passe</label>
+                        <input type="password" id="reg-password" name="password" placeholder="Choisissez un mot de passe fort" required>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">J'accepte les conditions d'utilisation et le traitement de nos données administratives.</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit btn-register">S'enregistrer sur PME CONNECT</button>
+                </form>
+            </div>
+
+            <div class="auth-box login-box">
+                <h2>Se connecter</h2>
+                <p class="auth-subtitle">Accédez à votre espace professionnel.</p>
+                
+                <form action="#" method="POST" class="auth-form">
+                    <div class="form-group">
+                        <label for="login-email">Adresse Email</label>
+                        <input type="email" id="login-email" name="email" placeholder="votre-email@domaine.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Mot de passe</label>
+                        <input type="password" id="login-password" name="password" placeholder="Votre mot de passe" required>
+                    </div>
+
+                    <div class="forgot-password">
+                        <a href="#">Mot de passe oublié ?</a>
+                    </div>
+
+                    <button type="submit" class="btn-submit btn-login">Se connecter</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

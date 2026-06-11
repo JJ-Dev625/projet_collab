@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - PME CONNECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="logo-circle">Logo</div>
+            <span>PME CONNECT</span>
+        </div>
+        
+        <nav class="sidebar-menu">
+            <a href="#" class="active"><i class="fa-solid fa-chart-pie"></i> Mon Tableau de bord</a>
+            <a href="#"><i class="fa-solid fa-building-plus"></i> Création PME</a>
+            <a href="#"><i class="fa-solid fa-file-invoice-dollar"></i> Impôts & Taxes</a>
+            <a href="#"><i class="fa-solid fa-users"></i> CNSS & CNAMGS</a>
+            <a href="#"><i class="fa-solid fa-folder-open"></i> Mes Documents</a>
+            <a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="index.html" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Déconnexion</a>
+        </div>
+    </aside>
+
+    <div class="dashboard-content">
+        
+        <header class="topbar">
+            <div class="welcome-msg">
+                <h2>Espace Entreprise : <span class="pme-name">Gabon Services SARL</span></h2>
+                <p>NIF : 799124 B | Statut : Actif</p>
+            </div>
+            <div class="user-profile">
+                <div class="profile-avatar"><i class="fa-solid fa-user"></i></div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            
+            <section class="stats-grid">
+                <div class="stat-card alert">
+                    <h3>Impôts attendus</h3>
+                    <p class="stat-number">Prochainement</p>
+                    <span class="stat-desc">Échéance : 15 du mois</span>
+                </div>
+                <div class="stat-card success">
+                    <h3>Cotisations CNSS</h3>
+                    <p class="stat-number">À jour</p>
+                    <span class="stat-desc">2ème Trimestre payé</span>
+                </div>
+                <div class="stat-card info">
+                    <h3>Démarches en cours</h3>
+                    <p class="stat-number">1</p>
+                    <span class="stat-desc">Mise à jour d'agrément</span>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <div class="table-header">
+                    <h3>Suivi de mes formalités administratives</h3>
+                </div>
+                
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Type de Démarche</th>
+                            <th>Date de demande</th>
+                            <th>Numéro de dossier</th>
+                            <th>Statut</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Immatriculation CNAMGS</strong></td>
+                            <td>10 Juin 2026</td>
+                            <td>#ANPI-2026-089</td>
+                            <td><span class="badge badge-progress">En cours de traitement</span></td>
+                            <td><button class="btn-table">Voir</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Déclaration d'existence (NIF)</strong></td>
+                            <td>12 Mai 2026</td>
+                            <td>#NIF-99124</td>
+                            <td><span class="badge badge-success">Validé / Terminé</span></td>
+                            <td><button class="btn-table">Télécharger</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
