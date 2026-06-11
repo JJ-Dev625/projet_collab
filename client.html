@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Client - PME CONNECT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="client-body">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <img src="assets/images/logo1.jpeg" alt="logo PME CONNECT">
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="active"><i class="fa-solid fa-compass"></i> Explorer</a>
+                <a href="#"><i class="fa-solid fa-box-open"></i> Mes Commandes</a>
+                <a href="#"><i class="fa-solid fa-circle-user"></i> Mon Profil</a>
+            </nav>
+            <div>
+                <a href="index.html" class="btn-logout-client" title="Déconnexion"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container client-hub-main">
+        <div class="welcome-banner-client">
+            <div class="welcome-text">
+                <h2>Mbolo, <span class="client-name">Christian</span> 👋</h2>
+                <p>Trouvez et commandez en un clic auprès des meilleures PME locales au Gabon.</p>
+            </div>
+        </div>
+
+        <div class="search-container-box">
+            <div class="search-bar-area">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Un bon resto, louer un SUV, réserver un pass...">
+            </div>
+        </div>
+
+        <section class="hub-sections">
+            <h3 class="hub-section-title">Faire une course par secteur</h3>
+            <div class="hub-categories-grid">
+                
+                <a href="restaurant-menu.html" class="hub-cat-card-premium">
+                    <div class="card-image-bg" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80');">
+                        <div class="card-badge-tag">Top Services</div>
+                    </div>
+                    <div class="card-premium-body">
+                        <div class="card-premium-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <h4>Restauration</h4>
+                        <p>Commandez vos plats locaux et menus digitaux</p>
+                    </div>
+                </a>
+
+                <a href="#" class="hub-cat-card-premium">
+                    <div class="card-image-bg" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="card-premium-body">
+                        <div class="card-premium-icon"><i class="fa-solid fa-car"></i></div>
+                        <h4>Location Véhicules</h4>
+                        <p>Voitures urbaines & SUV pour vos déplacements</p>
+                    </div>
+                </a>
+
+                <a href="#" class="hub-cat-card-premium">
+                    <div class="card-image-bg" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="card-premium-body">
+                        <div class="card-premium-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                        <h4>Événementiel</h4>
+                        <p>Achat de tickets de concerts, galas & gestion</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="client-history-section">
+            <h3 class="hub-section-title">Suivi & Dernière activité</h3>
+            <div class="recent-order-card-premium">
+                <div class="order-left-side">
+                    <div class="shop-avatar-logo"><i class="fa-solid fa-shop"></i></div>
+                    <div class="order-shop-info">
+                        <strong>Maman Jeanne Resto</strong>
+                        <span>Commandé le 10 Juin 2026 à Libreville</span>
+                    </div>
+                </div>
+                <div class="order-right-side">
+                    <span class="badge badge-success-premium"><i class="fa-solid fa-circle-check"></i> Livrée</span>
+                    <strong class="order-price-tag">5 000 FCFA</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
