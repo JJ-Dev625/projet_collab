@@ -1,0 +1,10 @@
+/* ==========================================================================
+   INDEX CENTRALISATEUR CSS - PME CONNECT
+   ========================================================================== */
+
+@import url('global.css');
+@import url('index.css');
+@import url('auth.css');
+@import url('dashboard.css');
+@import url('client.css'); 
+@import url('restaurant.css'); 

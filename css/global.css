@@ -1,0 +1,193 @@
+/* ==========================================================================
+   STRUCTURE COMPOSANTS PARTAGÉS - GLOBAL (CHARTE GRAPHIQUE)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8fafc; /* Blanc cassé pour le fond général */
+    color: #2D3748; /* Texte principal sombre */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- NAVBAR BLANC CASSÉ --- */
+.navbar {
+    background-color: #f8fafc; /* Blanc cassé demandé */
+    color: #0A2540; /* Texte bleu nuit */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(10, 37, 64, 0.1);
+    border-bottom: 2px solid #00BFA6; /* Ligne de rappel Turquoise */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo-area img {
+    height: 65px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #0A2540; /* Bleu nuit */
+    text-decoration: none;
+    font-weight: 400; /* Regular */
+    transition: color 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+    color: #00BFA6; /* Survol Turquoise */
+}
+
+.nav-links a.active {
+    font-weight: 700; /* Gras */
+    border-bottom: 2px solid #00BFA6;
+}
+
+.btn-connect {
+    background-color: #0A2540; /* Bouton Bleu nuit */
+    color: #f8fafc; /* Écrit en blanc cassé */
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-connect:hover {
+    background-color: #00BFA6; /* Évolution vers le Turquoise au survol */
+}
+
+/* --- FOOTER BLANC CASSÉ --- */
+.footer {
+    background-color: #f8fafc; /* Blanc cassé */
+    color: #2D3748; /* Écrit en sombre */
+    padding: 50px 0 0 0;
+    margin-top: auto;
+    border-top: 4px solid #00BFA6; /* Bordure Turquoise */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: #2D3748;
+    margin-top: 12px;
+    max-width: 300px;
+}
+
+.footer-location {
+    font-size: 13px;
+    color: #C76B29; /* Marron clair */
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.footer-nav-col h4 {
+    font-size: 16px;
+    color: #0A2540; /* Bleu nuit pour les sous-titres du footer */
+    margin-bottom: 15px;
+    font-weight: 700; /* Gras */
+}
+
+.footer-nav-col ul { list-style: none; }
+.footer-nav-col ul li { margin-bottom: 10px; }
+
+.footer-nav-col ul li a {
+    color: #2D3748;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-nav-col ul li a:hover {
+    color: #00BFA6; /* Turquoise au survol */
+}
+
+.footer-contact-text {
+    font-size: 14px;
+    color: #2D3748;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-socials { display: flex; gap: 15px; margin-top: 15px; }
+
+.footer-socials a {
+    color: #f8fafc;
+    background-color: #0A2540; /* Icônes sur fond Bleu nuit */
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background-color: #00BFA6;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    background-color: #0A2540; /* Base du footer en Bleu Nuit pour trancher proprement */
+    padding: 20px 0;
+    font-size: 13px;
+    color: #f8fafc;
+}
+
+.footer-bottom-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.footer-legal-links { display: flex; gap: 20px; }
+.footer-legal-links a { color: #f8fafc; text-decoration: none; }
+.footer-legal-links a:hover { color: #00BFA6; }
+
+/* Responsive Mobile Rules */
+@media (max-width: 768px) {
+    .nav-container { flex-direction: column; gap: 12px; text-align: center; }
+    .nav-links { justify-content: center; gap: 15px; flex-wrap: wrap; }
+    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+    .footer-brand-area { display: flex; flex-direction: column; align-items: center; }
+    .footer-socials { justify-content: center; }
+    .footer-bottom-container { flex-direction: column; }
+}

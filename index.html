@@ -4,148 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PME CONNECT - Boostez votre activité</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo-area">
-                <img src="assets/images/logo1.jpeg" alt="logo PME CONNECT">
-            </div>
+            <a href="index.html" class="logo-area">
+                <img src="assets/images/logo1.jpeg" alt="Logo PME CONNECT" class="logo-img">
+                <span class="brand-name">PME CONNECT</span>
+            </a>
+
             <nav class="nav-links">
-                <a href="#" class="active">Accueil</a>
+                <a href="index.html" class="active">Accueil</a>
                 <a href="#apropos">À propos</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contacts</a>
             </nav>
-            <div>
-                <a href="inscription.html" class="btn-connect">Connexion</a>
-            </div>
+
+            <a href="inscription.html" class="btn-connect">Connexion</a>
         </div>
     </header>
 
-    <section class="hero shadow-overlay">
+    <section class="hero">
         <div class="hero-content">
+            <span class="hero-badge">Transformation digitale</span>
             <h1 class="hero-title">Bienvenue sur PME CONNECT</h1>
             <p class="hero-subtitle">Votre passerelle vers la transformation digitale</p>
             <p class="hero-description">
                 Propulsez votre business en ligne. Que vous soyez dans la restauration, la location ou l'événementiel au Gabon, nous numérisons vos services pour attirer plus de clients.
             </p>
-            <a href="inscription.html" class="btn-hero">Digitaliser mon activité</a>
+            <div class="hero-actions">
+                <a href="inscription.html" class="btn-hero">Digitaliser mon activité</a>
+                <a href="#services" class="btn-hero-outline">Découvrir nos services</a>
+            </div>
         </div>
     </section>
 
     <section id="apropos" class="about-section">
-        <div class="container">
-            <h3>À propos de nous</h3>
-            <p>
-                <strong>PME Connect</strong> est une plateforme numérique conçue pour accompagner les petites et moyennes entreprises (PME) gabonaises dans leur transformation digitale. Nous proposons des solutions numériques sur mesure destinées principalement aux secteurs de la <strong>restauration</strong>, de la <strong>location de véhicules</strong> et de <strong>l'événementiel</strong> afin d'améliorer la visibilité et la gestion de leurs prestations. 
-            </p>
-            <p>
-                Notre but ? Permettre aux entrepreneurs d'accéder à une présence en ligne professionnelle, d'attirer davantage de clients, de simplifier la gestion des réservations et de booster leur compétitivité sur le marché.
-            </p>
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="section-kicker">À propos de nous</span>
+                <h2 class="section-title">Une solution pensée pour les PME gabonaises</h2>
+                <p>
+                    <strong>PME Connect</strong> est une plateforme numérique conçue pour accompagner les petites et moyennes entreprises gabonaises dans leur transformation digitale.
+                </p>
+                <p>
+                    Nous proposons des solutions sur mesure pour la <strong>restauration</strong>, la <strong>location de véhicules</strong> et <strong>l'événementiel</strong>, afin d'améliorer la visibilité, les réservations et la gestion des prestations.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Notre objectif</h3>
+                <p>
+                    Offrir une présence en ligne professionnelle, simplifier la gestion et booster la compétitivité de votre activité.
+                </p>
+                <ul class="about-list">
+                    <li>Plus de visibilité</li>
+                    <li>Plus de clients</li>
+                    <li>Plus de réservations</li>
+                    <li>Une image plus moderne</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <main id="services" class="container main-content">
-        <h2 class="section-title">Comment PME CONNECT booste votre activité ?</h2>
+    <main id="services" class="main-content">
+        <div class="container">
+            <span class="section-kicker">Nos services</span>
+            <h2 class="section-title">Comment PME CONNECT booste votre activité ?</h2>
 
-        <div class="services-grid">    
-            
-            <div class="card">
-                <div class="card-icon">
-                    <img src="assets/images/resto3.jpeg" alt="Restauration">
-                </div>
-                <div class="card-body">
-                    <h3>Restauration</h3>
-                    <p>Valorisez vos menus, mettez en avant les plats du terroir et encaissez les commandes en ligne en toute simplicité.</p>
-                </div>
-                <button class="btn-card">Créer mon menu digital</button>
+            <div class="services-grid">
+                <article class="card">
+                    <div class="card-icon">
+                        <img src="assets/images/resto3.jpeg" alt="Restauration">
+                    </div>
+                    <div class="card-body">
+                        <h3>Restauration</h3>
+                        <p>Valorisez vos menus, mettez en avant les plats du terroir et encaissez les commandes en ligne en toute simplicité.</p>
+                    </div>
+                    <a href="inscription.html" class="btn-card">Créer mon menu digital</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Location de véhicules">
+                    </div>
+                    <div class="card-body">
+                        <h3>Location de véhicules</h3>
+                        <p>Louez vos véhicules en toute sécurité. Suivez la disponibilité de votre flotte et réduisez vos coûts de gestion.</p>
+                    </div>
+                    <a href="inscription.html" class="btn-card">Gérer ma flotte</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">
+                        <img src="assets/images/evenementiel.jpg" alt="Événementiel">
+                    </div>
+                    <div class="card-body">
+                        <h3>Événementiel</h3>
+                        <p>Organisez, vendez vos tickets et rendez vos manifestations mémorables grâce à nos outils de réservation en ligne.</p>
+                    </div>
+                    <a href="inscription.html" class="btn-card">Planifier un événement</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">
+                        <img src="assets/images/service.jpeg" alt="Sites Web professionnels">
+                    </div>
+                    <div class="card-body">
+                        <h3>Sites Web professionnels</h3>
+                        <p>Créez une présence en ligne élégante et crédible pour présenter vos services et attirer de nouveaux clients.</p>
+                    </div>
+                    <a href="inscription.html" class="btn-card">Créer mon site</a>
+                </article>
             </div>
-
-            <div class="card">
-                <div class="card-icon">
-                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80" alt="Location de véhicules">
-                </div>
-                <div class="card-body">
-                    <h3>Location de véhicules</h3>
-                    <p>Louez vos véhicules en toute sécurité. Suivez la disponibilité de votre flotte et baissez vos coûts de gestion.</p>
-                </div>
-                <button class="btn-card">Gérer ma flotte</button>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">
-                    <img src="assets/images/evenementiel.jpg" alt="Événementiel">
-                </div>
-                <div class="card-body">
-                    <h3>Événementiel</h3>
-                    <p>Organisez, vendez vos tickets et rendez vos manifestations mémorables grâce à nos outils de réservation en ligne.</p>
-                </div>
-                <button class="btn-card">Planifier un événement</button>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">
-                    <img src="assets/images/service.jpeg" alt="Services Administratifs">
-                </div>
-                <div class="card-body">
-                    <h3>Création de sites Web professionnels</h3>
-                    <p>Gérez facilement les cotisations CNSS/CNAMGS de votre personnel et vos obligations fiscales depuis votre espace.</p>
-                </div>
-                <button class="btn-card">Accéder aux services</button>
-            </div>
-
         </div>
     </main>
 
-    <footer id="contact" class="footer">
-    <div class="container footer-grid">
-        
-        <div class="footer-brand-area">
-            <div class="logo-area">
-                <div class="logo-circle">Logo</div>
-                <span class="brand-name">PME CONNECT</span>
+    <footer id="contact" class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="assets/images/logo1.jpeg" alt="PME CONNECT" class="footer-logo">
+                    <div class="footer-brand-text">
+                        <strong>PME CONNECT</strong>
+                        <span>Services et PME locales au Gabon</span>
+                    </div>
+                </a>
+                <p>
+                    Une plateforme pensée pour connecter les particuliers aux meilleures PME locales, simplement et rapidement.
+                </p>
             </div>
-            <p class="footer-tagline">Votre passerelle vers la transformation digitale au Gabon.</p>
-            <p class="footer-location"><i class="fa-solid fa-location-dot"></i> Libreville, Gabon</p>
-        </div>
-        
-        <div class="footer-nav-col">
-            <h4>Navigation</h4>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#services">Nos Services</a></li>
-            </ul>
+
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <a href="index.html">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#services">Services</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>PME</h4>
+                <a href="restaurant-menu.html">Restauration</a>
+                <a href="vehicules.html">Location véhicules</a>
+                <a href="evenementiel.html">Événementiel</a>
+                <a href="services-divers.html">Services divers</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:contact@pmeconnect.ga"><i class="fa-solid fa-envelope"></i> contact@pmeconnect.ga</a>
+                <a href="tel:+24101000000"><i class="fa-solid fa-phone"></i> +241 01 00 00 00</a>
+                <span><i class="fa-solid fa-location-dot"></i> Libreville, Gabon</span>
+            </div>
+
+            <div class="footer-column">
+                <h4>Réseaux sociaux</h4>
+                <div class="footer-social-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="footer-nav-col">
-            <h4>Contact & Support</h4>
-            <p class="footer-contact-text"><i class="fa-solid fa-phone"></i> +241 07 00 00 00</p>
-            <p class="footer-contact-text"><i class="fa-solid fa-envelope"></i> contact@pmeconnect.ga</p>
-            
-            <div class="footer-socials">
-                <a href="mailto:contact@pmeconnect.ga" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://wa.me/24107000000" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <span>© 2026 PME CONNECT. Tous droits réservés.</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Confidentialité</a>
+                    <a href="#">Conditions</a>
+                </div>
             </div>
         </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <div class="container footer-bottom-container">
-            <p>&copy; 2026 PME CONNECT. Tous droits réservés.</p>
-            <div class="footer-legal-links">
-                <a href="#">Mentions légales</a>
-                <a href="#">Politique de confidentialité</a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>

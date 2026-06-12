@@ -4,48 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion - PME CONNECT</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
 
+<body class="auth-page">
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo-area">
-                <img src="assets/images/logo1.jpeg" alt="logo PME CONNECT">
-            </div>
-            <nav class="nav-links">
+            <a href="index.html" class="logo-area" aria-label="Retour à l'accueil">
+                <img src="assets/images/logo1.jpeg" alt="Logo PME CONNECT" class="logo-img">
+                <span class="brand-name">PME CONNECT</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Navigation principale">
                 <a href="index.html">Accueil</a>
                 <a href="index.html#apropos">À propos</a>
                 <a href="index.html#services">Services</a>
                 <a href="index.html#contact">Contacts</a>
             </nav>
-            <div>
-                <a href="index.html" class="btn-connect">Retour</a>
-            </div>
+
+            <a href="index.html" class="btn-connect">Retour</a>
         </div>
     </header>
 
-    <main class="container auth-section">
-        <div class="auth-single-box">
-            
-            <div class="auth-box login-box-clean">
-                <h2>Se connecter</h2>
-                <p class="auth-subtitle">Accédez à votre espace professionnel et suivez vos clients.</p>
-                
-                <form action="dashboard.html" method="POST" class="auth-form">
+    <main class="auth-section">
+        <div class="container auth-container">
+            <section class="auth-card" aria-labelledby="login-title">
+                <div class="auth-card-header">
+                    <span class="section-kicker">Connexion</span>
+                    <h1 id="login-title">Accédez à votre espace</h1>
+                    <p>Choisissez votre profil puis connectez-vous à l’espace correspondant.</p>
+                </div>
+
+                <form action="#" method="POST" class="auth-form">
+                    <fieldset class="role-switch">
+                        <legend class="sr-only">Choix du profil</legend>
+
+                        <button type="submit" formaction="dashboard-pme.html" class="role-btn role-btn-pme">
+                            <span>PME</span>
+                            <small>Accéder à l’espace professionnel</small>
+                        </button>
+
+                        <button type="submit" formaction="dashboard-visiteur.html" class="role-btn role-btn-visitor">
+                            <span>Visiteur</span>
+                            <small>Accéder à l’espace client</small>
+                        </button>
+                    </fieldset>
+
                     <div class="form-group">
-                        <label for="login-email">Identifiant ou Adresse Email</label>
-                        <input type="email" id="login-email" name="email" placeholder="votre-email@domaine.com" required>
+                        <label for="login-email">Adresse email</label>
+                        <input type="email" id="login-email" name="email" placeholder="votre-email@domaine.com" autocomplete="username" required>
                     </div>
 
                     <div class="form-group">
                         <label for="login-password">Mot de passe</label>
-                        <input type="password" id="login-password" name="password" placeholder="Votre mot de passe" required>
+                        <input type="password" id="login-password" name="password" placeholder="Votre mot de passe" autocomplete="current-password" required>
                     </div>
 
-                    <div class="forgot-password">
-                        <a href="#">Mot de passe oublié ?</a>
+                    <div class="auth-row">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember">
+                            <span>Se souvenir de moi</span>
+                        </label>
+
+                        <a href="#" class="forgot-password">Mot de passe oublié ?</a>
                     </div>
 
                     <button type="submit" class="btn-submit btn-login">Se connecter</button>
@@ -54,10 +79,47 @@
                 <div class="auth-switch-link">
                     <p>Vous n'avez pas encore de compte ? <a href="inscription2.html">Créer un compte</a></p>
                 </div>
-            </div>
-
+            </section>
         </div>
     </main>
+    <footer class="site-footer">
+    <div class="container footer-container">
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo-link">
+                <img src="assets/images/logo1.jpeg" alt="PME CONNECT" class="footer-logo">
+                <div class="footer-brand-text">
+                    <strong>PME CONNECT</strong>
+                    <span>Services et PME locales au Gabon</span>
+                </div>
+            </a>
+            <p>
+                Une plateforme pensée pour connecter les particuliers aux meilleures PME locales, simplement et rapidement.
+            </p>
+        </div>
 
+        <div class="footer-column">
+            <h4>Navigation</h4>
+            <a href="client.html">Explorer</a>
+            <a href="client.html#services">Services</a>
+            <a href="client.html#actus">Dernières activités</a>
+            <a href="index.html">Accueil</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>PME</h4>
+            <a href="restaurant-menu.html">Restauration</a>
+            <a href="vehicules.html">Location véhicules</a>
+            <a href="evenementiel.html">Événementiel</a>
+            <a href="services-divers.html">Services divers</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <a href="mailto:contact@pmeconnect.ga"><i class="fa-solid fa-envelope"></i> contact@pmeconnect.ga</a>
+            <a href="tel:+24101000000"><i class="fa-solid fa-phone"></i> +241 01 00 00 00</a>
+            <span><i class="fa-solid fa-location-dot"></i> Libreville, Gabon</span>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

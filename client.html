@@ -7,95 +7,250 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="client-body">
 
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo-area">
-                <img src="assets/images/Mazda BT-50, Le pick-up conçu pour vous _ Mazda Senegal.jpeg" alt="logo PME CONNECT">
-            </div>
-            <nav class="nav-links">
-                <a href="#" class="active"><i class="fa-solid fa-compass"></i> Explorer</a>
-                <a href="#"><i class="fa-solid fa-box-open"></i> Mes Commandes</a>
-                <a href="#"><i class="fa-solid fa-circle-user"></i> Mon Profil</a>
+            <a href="#" class="brand-client">
+                <img src="assets/images/logo1.jpeg" alt="PME CONNECT" class="brand-client-logo">
+                <div class="brand-client-text">
+                    <span>PME CONNECT</span>
+                    <small>Services locaux au Gabon</small>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Navigation client">
+                <a href="#services" class="active"><i class="fa-solid fa-compass"></i> Explorer</a>
+                <a href="#"><i class="fa-solid fa-box-open"></i> Commandes</a>
+                <a href="#"><i class="fa-solid fa-circle-user"></i> Profil</a>
             </nav>
-            <div>
-                <a href="index.html" class="btn-logout-client" title="Déconnexion"><i class="fa-solid fa-right-from-bracket"></i></a>
-            </div>
+
+            <a href="index.html" class="btn-logout-client" title="Déconnexion">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
         </div>
     </header>
 
     <main class="container client-hub-main">
-        <div class="welcome-banner-client">
+        <section class="welcome-banner-client">
             <div class="welcome-text">
-                <h2>Mbolo, <span class="client-name">Christian</span> 👋</h2>
-                <p>Trouvez et commandez en un clic auprès des meilleures PME locales au Gabon.</p>
+                <p class="client-kicker">Bienvenue sur votre espace</p>
+                <h1>Mbolo, <span class="client-name">Christian</span> 👋</h1>
+                <p>Trouvez rapidement les meilleures PME gabonaises, comparez les offres et ouvrez une fiche détaillée en un clic.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="search-container-box">
+        <section class="search-container-box" aria-label="Recherche">
             <div class="search-bar-area">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Un bon resto, louer un SUV, réserver un pass...">
+                <input type="text" placeholder="Rechercher un restaurant, un véhicule, un service, une PME...">
             </div>
-        </div>
+        </section>
 
-        <section class="hub-sections">
-            <h3 class="hub-section-title">Faire une course par secteur</h3>
-            <div class="hub-categories-grid">
-                
+        <section class="services-section" id="services">
+            <div class="section-head">
+                <h2 class="hub-section-title">Restauration</h2>
+                <p>Plusieurs PME pour comparer les menus, les prix et la localisation.</p>
+            </div>
+
+            <div class="service-grid">
                 <a href="restaurant-menu.html" class="hub-cat-card-premium">
-                    <div class="card-image-bg" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80');">
-                        <div class="card-badge-tag">Top Services</div>
+                    <div class="card-image-bg card-resto-1">
+                        <span class="card-badge-tag">Libreville</span>
                     </div>
                     <div class="card-premium-body">
                         <div class="card-premium-icon"><i class="fa-solid fa-utensils"></i></div>
-                        <h4>Restauration</h4>
-                        <p>Commandez vos plats locaux et menus digitaux</p>
+                        <h3>Maman Jeanne Resto</h3>
+                        <p>Menus locaux, plats du jour et livraison rapide dans Libreville.</p>
+                        <span class="card-meta"><i class="fa-solid fa-location-dot"></i> Akanda</span>
+                        <span class="card-cta">Voir la fiche</span>
                     </div>
                 </a>
 
-                <a href="#" class="hub-cat-card-premium">
-                    <div class="card-image-bg" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=500&q=80');"></div>
+                <a href="restaurant-menu.html" class="hub-cat-card-premium">
+                    <div class="card-image-bg card-resto-2">
+                        <span class="card-badge-tag">Owendo</span>
+                    </div>
+                    <div class="card-premium-body">
+                        <div class="card-premium-icon"><i class="fa-solid fa-bowl-food"></i></div>
+                        <h3>Saveurs du Port</h3>
+                        <p>Poissons, grillades et plats familiaux avec réservation simple.</p>
+                        <span class="card-meta"><i class="fa-solid fa-location-dot"></i> Owendo</span>
+                        <span class="card-cta">Voir la fiche</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="section-head">
+                <h2 class="hub-section-title">Location de véhicules</h2>
+                <p>Choisissez entre plusieurs agences pour comparer confort et budget.</p>
+            </div>
+
+            <div class="service-grid">
+                <a href="vehicules.html" class="hub-cat-card-premium">
+                    <div class="card-image-bg card-auto-1">
+                        <span class="card-badge-tag">Libreville</span>
+                    </div>
                     <div class="card-premium-body">
                         <div class="card-premium-icon"><i class="fa-solid fa-car"></i></div>
-                        <h4>Location Véhicules</h4>
-                        <p>Voitures urbaines & SUV pour vos déplacements</p>
+                        <h3>Gabon Drive</h3>
+                        <p>Berlines et SUV pour déplacements personnels et professionnels.</p>
+                        <span class="card-meta"><i class="fa-solid fa-location-dot"></i> Centre-ville</span>
+                        <span class="card-cta">Voir la fiche</span>
                     </div>
                 </a>
 
-                <a href="#" class="hub-cat-card-premium">
-                    <div class="card-image-bg" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=500&q=80');"></div>
+                <a href="vehicules.html" class="hub-cat-card-premium">
+                    <div class="card-image-bg card-auto-2">
+                        <span class="card-badge-tag">Owendo</span>
+                    </div>
+                    <div class="card-premium-body">
+                        <div class="card-premium-icon"><i class="fa-solid fa-suv"></i></div>
+                        <h3>Premium Mobility</h3>
+                        <p>Véhicules récents, options chauffeur et réservation flexible.</p>
+                        <span class="card-meta"><i class="fa-solid fa-location-dot"></i> Owendo</span>
+                        <span class="card-cta">Voir la fiche</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="section-head">
+                <h2 class="hub-section-title">Événementiel</h2>
+                <p>Des PME spécialisées pour vos tickets, cérémonies et prestations.</p>
+            </div>
+
+            <div class="service-grid">
+                <a href="evenementiel.html" class="hub-cat-card-premium">
+                    <div class="card-image-bg card-event-1">
+                        <span class="card-badge-tag">Libreville</span>
+                    </div>
                     <div class="card-premium-body">
                         <div class="card-premium-icon"><i class="fa-solid fa-calendar-days"></i></div>
-                        <h4>Événementiel</h4>
-                        <p>Achat de tickets de concerts, galas & gestion</p>
+                        <h3>Event Plus</h3>
+                        <p>Billetterie, décoration et coordination d’événements privés.</p>
+                        <span class="card-meta"><i class="fa-solid fa-location-dot"></i> Centre-ville</span>
+                        <span class="card-cta">Voir la fiche</span>
                     </div>
                 </a>
 
+                <a href="evenementiel.html" class="hub-cat-card-premium">
+                    <div class="card-image-bg card-event-2">
+                        <span class="card-badge-tag">Akanda</span>
+                    </div>
+                    <div class="card-premium-body">
+                        <div class="card-premium-icon"><i class="fa-solid fa-music"></i></div>
+                        <h3>Gabon Fest</h3>
+                        <p>Organisation de soirées, galas et tickets avec options VIP.</p>
+                        <span class="card-meta"><i class="fa-solid fa-location-dot"></i> Akanda</span>
+                        <span class="card-cta">Voir la fiche</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="section-head">
+                <h2 class="hub-section-title">Services divers</h2>
+                <p>Un large choix de PME pour simplifier le quotidien.</p>
+            </div>
+
+            <div class="service-grid">
+                <a href="services-divers.html" class="hub-cat-card-premium">
+                    <div class="card-image-bg card-divers-1">
+                        <span class="card-badge-tag">Libreville</span>
+                    </div>
+                    <div class="card-premium-body">
+                        <div class="card-premium-icon"><i class="fa-solid fa-scissors"></i></div>
+                        <h3>Style & Beauté</h3>
+                        <p>Coiffure, soins et services de beauté à proximité.</p>
+                        <span class="card-meta"><i class="fa-solid fa-location-dot"></i> Akébé</span>
+                        <span class="card-cta">Voir la fiche</span>
+                    </div>
+                </a>
+
+                <a href="services-divers.html" class="hub-cat-card-premium">
+                    <div class="card-image-bg card-divers-2">
+                        <span class="card-badge-tag">Gabon</span>
+                    </div>
+                    <div class="card-premium-body">
+                        <div class="card-premium-icon"><i class="fa-solid fa-truck"></i></div>
+                        <h3>Transport Express</h3>
+                        <p>Livraison, petits colis et transport rapide dans la ville.</p>
+                        <span class="card-meta"><i class="fa-solid fa-location-dot"></i> Libreville</span>
+                        <span class="card-cta">Voir la fiche</span>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section class="client-history-section">
-            <h3 class="hub-section-title">Suivi & Dernière activité</h3>
+            <div class="section-head">
+                <h2 class="hub-section-title">Dernière activité</h2>
+                <p>Retrouvez votre dernière commande pour la reprendre facilement.</p>
+            </div>
+
             <div class="recent-order-card-premium">
                 <div class="order-left-side">
                     <div class="shop-avatar-logo"><i class="fa-solid fa-shop"></i></div>
                     <div class="order-shop-info">
                         <strong>Maman Jeanne Resto</strong>
-                        <span>Commandé le 10 Juin 2026 à Libreville</span>
+                        <span>Commandé le 10 juin 2026 à Libreville</span>
                     </div>
                 </div>
+
                 <div class="order-right-side">
-                    <span class="badge badge-success-premium"><i class="fa-solid fa-circle-check"></i> Livrée</span>
+                    <span class="badge-success-premium"><i class="fa-solid fa-circle-check"></i> Livrée</span>
                     <strong class="order-price-tag">5 000 FCFA</strong>
                 </div>
             </div>
         </section>
     </main>
+<footer class="site-footer">
+    <div class="container footer-container">
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo-link">
+                <img src="assets/images/logo1.jpeg" alt="PME CONNECT" class="footer-logo">
+                <div class="footer-brand-text">
+                    <strong>PME CONNECT</strong>
+                    <span>Services et PME locales au Gabon</span>
+                </div>
+            </a>
+            <p>
+                Une plateforme pensée pour connecter les particuliers aux meilleures PME locales, simplement et rapidement.
+            </p>
+        </div>
 
+        <div class="footer-column">
+            <h4>Navigation</h4>
+            <a href="client.html">Explorer</a>
+            <a href="client.html#services">Services</a>
+            <a href="client.html#actus">Dernières activités</a>
+            <a href="index.html">Accueil</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>PME</h4>
+            <a href="restaurant-menu.html">Restauration</a>
+            <a href="vehicules.html">Location véhicules</a>
+            <a href="evenementiel.html">Événementiel</a>
+            <a href="services-divers.html">Services divers</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <a href="mailto:contact@pmeconnect.ga"><i class="fa-solid fa-envelope"></i> contact@pmeconnect.ga</a>
+            <a href="tel:+24101000000"><i class="fa-solid fa-phone"></i> +241 01 00 00 00</a>
+            <span><i class="fa-solid fa-location-dot"></i> Libreville, Gabon</span>
+        </div>
+    </div>
+    </div>
+</footer>
 </body>
 </html>
