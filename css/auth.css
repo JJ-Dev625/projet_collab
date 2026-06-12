@@ -10,6 +10,10 @@
     --shadow: 0 10px 30px rgba(10, 37, 64, 0.08);
     --shadow-hover: 0 18px 38px rgba(10, 37, 64, 0.14);
     --radius: 18px;
+    --pme-bg: rgba(0, 191, 166, 0.08);
+    --pme-border: rgba(0, 191, 166, 0.25);
+    --visitor-bg: rgba(199, 107, 41, 0.08);
+    --visitor-border: rgba(199, 107, 41, 0.25);
 }
 
 * {
@@ -191,7 +195,10 @@ select {
 .auth-container {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 /* Login card */
@@ -221,6 +228,24 @@ select {
 .auth-card-header p {
     color: var(--muted);
     font-size: 0.98rem;
+}
+
+/* PME card specific */
+.auth-card.pme-card .section-kicker {
+    color: var(--teal);
+}
+
+.auth-card.pme-card {
+    border-top: 4px solid var(--teal);
+}
+
+/* Visitor card specific */
+.auth-card.visitor-card .section-kicker {
+    color: var(--brown);
+}
+
+.auth-card.visitor-card {
+    border-top: 4px solid var(--brown);
 }
 
 .auth-form {
@@ -320,6 +345,30 @@ select {
     transform: translateY(-2px);
 }
 
+.btn-login-pme {
+    background: var(--navy);
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.btn-login-pme:hover {
+    background: var(--teal);
+    color: var(--navy);
+    transform: translateY(-2px);
+}
+
+.btn-login-visitor {
+    background: var(--navy);
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.btn-login-visitor:hover {
+    background: var(--brown);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 .auth-switch-link {
     margin-top: 22px;
     text-align: center;
@@ -341,7 +390,7 @@ select {
     text-decoration: underline;
 }
 
-/* Login role buttons */
+/* Login role buttons (optionnel - pour inscription) */
 .role-switch {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -384,11 +433,19 @@ select {
 }
 
 .role-btn-pme {
-    background: rgba(0, 191, 166, 0.10);
+    background: var(--pme-bg);
+}
+
+.role-btn-pme span {
+    color: var(--teal);
 }
 
 .role-btn-visitor {
-    background: rgba(199, 107, 41, 0.10);
+    background: var(--visitor-bg);
+}
+
+.role-btn-visitor span {
+    color: var(--brown);
 }
 
 /* Registration */
@@ -474,6 +531,16 @@ select {
         padding: 34px 0;
     }
 
+    .auth-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-card {
+        width: 100%;
+        max-width: 560px;
+    }
+
     .register-layout {
         grid-template-columns: 1fr;
     }
@@ -526,6 +593,7 @@ select {
         font-size: 0.96rem;
     }
 }
+
 .site-footer {
     background: linear-gradient(180deg, #0A2540 0%, #081c31 100%);
     color: #f8fafc;

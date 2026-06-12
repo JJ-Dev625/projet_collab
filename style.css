@@ -977,3 +977,269 @@ body {
         padding: 25px 20px;
     }
 }
+
+/* ==========================================================================
+   REFONTE DU HUB CLIENT (STYLE PREMIUM)
+   ========================================================================== */
+
+/* Attribution globale de la nouvelle police au hub client */
+.client-body {
+    font-family *: not(i):not.(.fa-solid):not(.fa){
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    background-color: #f8fafc;
+    }  
+
+
+.client-body * {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* Bouton de déconnexion discret et moderne */
+.btn-logout-client {
+    color: #cbd5e1;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+.btn-logout-client:hover {
+    color: #ef4444;
+}
+
+/* Bannière de bienvenue */
+.welcome-banner-client {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.welcome-banner-client h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.welcome-banner-client p {
+    font-size: 15px;
+    color: #64748b;
+    margin-top: 4px;
+}
+
+/* Barre de recherche flottante */
+.search-container-box {
+    margin-bottom: 40px;
+}
+
+.search-bar-area {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 16px 24px;
+    border-radius: 16px;
+    gap: 15px;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
+    transition: all 0.3s ease;
+}
+
+.search-bar-area:focus-within {
+    border-color: #0b288f;
+    box-shadow: 0 4px 24px -2px rgba(11, 40, 143, 0.12);
+}
+
+.search-bar-area i {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+.search-bar-area input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+/* Titres de section */
+.hub-section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+/* --- GRILLE & CARTES DE SERVICES SERVICES PREMIUM --- */
+.hub-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.hub-cat-card-premium {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1e293b;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Gestion de l'image de fond */
+.card-image-bg {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+/* Petit badge indicatif sur l'image */
+.card-badge-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #17d313;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-premium-body {
+    padding: 20px;
+    position: relative;
+    padding-top: 35px;
+    flex-grow: 1;
+}
+
+/* Icône ronde flottant au milieu de la carte */
+.card-premium-icon {
+    position: absolute;
+    top: -24px;
+    left: 20px;
+    width: 48px;
+    height: 48px;
+    background-color: #0b288f;
+    color: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(11, 40, 143, 0.3);
+    border: 3px solid #ffffff;
+}
+
+.hub-cat-card-premium h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.hub-cat-card-premium p {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+/* Animation au survol de la carte */
+.hub-cat-card-premium:hover {
+    transform: translateY(-6px);
+    border-color: #0b288f;
+    box-shadow: 0 20px 25px -5px rgba(11, 40, 143, 0.08);
+}
+
+/* --- CARTE HISTORIQUE REVISITÉE --- */
+.recent-order-card-premium {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01);
+}
+
+.order-left-side {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.shop-avatar-logo {
+    width: 44px;
+    height: 44px;
+    background-color: #f1f5f9;
+    color: #0b288f;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.order-shop-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-shop-info strong {
+    font-size: 15px;
+    color: #0f172a;
+}
+
+.order-shop-info span {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.order-right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.badge-success-premium {
+    background-color: #dcfce7;
+    color: #15803d;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.order-price-tag {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* Ajustements rapides pour les petits écrans mobiles */
+@media (max-width: 640px) {
+    .recent-order-card-premium {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .order-right-side {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px dashed #e2e8f0;
+        padding-top: 12px;
+    }
+}

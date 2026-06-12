@@ -26,8 +26,8 @@
                 <a href="index.html#contact">Contacts</a>
             </nav>
 
-            <a href="connexion.html" class="btn-connect">Connexion</a>
-        </div>
+                <a href="connexion.html" class="btn-connect">Connexion</a>
+            </div>
     </header>
 
     <main class="auth-section">
@@ -39,26 +39,26 @@
                         <span class="section-kicker">Entreprise</span>
                         <h1 id="pme-title">Nouvelle PME</h1>
                         <p>Inscrivez votre commerce pour activer vos outils digitaux : menu, réservation, flotte ou billetterie.</p>
-                    </div>
-
+            </div>
+            
                     <form action="dashboard-pme.html" method="POST" class="auth-form">
-                        <div class="form-group">
-                            <label for="reg-company">Nom de l'entreprise / Commerce</label>
+                <div class="form-group">
+                    <label for="reg-company">Nom de l'entreprise / Commerce</label>
                             <input type="text" id="reg-company" name="company_name" placeholder="Ex: Maman Jeanne Resto" required>
-                        </div>
+                </div>
 
-                        <div class="form-group">
-                            <label for="reg-sector">Secteur d'activité principal</label>
+                <div class="form-group">
+                    <label for="reg-sector">Secteur d'activité principal</label>
                             <select id="reg-sector" name="company_sector" required>
-                                <option value="" disabled selected>-- Choisissez votre secteur --</option>
+                        <option value="" disabled selected>-- Choisissez votre secteur --</option>
                                 <option value="restauration">Restauration</option>
                                 <option value="location">Location de véhicules</option>
                                 <option value="evenementiel">Événementiel</option>
                                 <option value="autres">Autre secteur</option>
-                            </select>
-                        </div>
+                    </select>
+                </div>
 
-                        <div class="form-group">
+                <div class="form-group">
                             <label for="reg-email-pme">Adresse email professionnelle</label>
                             <input type="email" id="reg-email-pme" name="email" placeholder="contact@votreentreprise.ga" autocomplete="email" required>
                         </div>
@@ -71,20 +71,20 @@
                         <div class="form-group">
                             <label for="reg-address-pme">Adresse / Quartier</label>
                             <input type="text" id="reg-address-pme" name="address" placeholder="Ex: Libreville, Owendo" required>
-                        </div>
+                </div>
 
-                        <div class="form-group">
-                            <label for="reg-password-pme">Mot de passe</label>
+                <div class="form-group">
+                    <label for="reg-password-pme">Mot de passe</label>
                             <input type="password" id="reg-password-pme" name="password" placeholder="Mot de passe fort" autocomplete="new-password" required>
-                        </div>
+                </div>
 
                         <div class="form-group checkbox-group">
-                            <input type="checkbox" id="terms-pme" required>
-                            <label for="terms-pme">J'accepte les conditions d'activation des services numériques de PME CONNECT.</label>
-                        </div>
+                    <input type="checkbox" id="terms-pme" required>
+                    <label for="terms-pme">J'accepte les conditions d'activation des services numériques de PME CONNECT.</label>
+                </div>
 
                         <button type="submit" class="btn-submit btn-register">Créer mon espace PME</button>
-                    </form>
+            </form>
                 </section>
 
                 <section class="auth-card register-card" aria-labelledby="user-title">
@@ -92,31 +92,31 @@
                         <span class="section-kicker user-kicker">Particulier</span>
                         <h1 id="user-title">Nouvel utilisateur</h1>
                         <p>Créez un compte personnel simple pour commander ou réserver auprès de vos PME préférées.</p>
-                    </div>
+            </div>
+            
+                    <form action="client.html" method="POST" class="auth-form">
+                <div class="form-group">
+                    <label for="user-name">Nom complet</label>
+                    <input type="text" id="user-name" name="user_name" placeholder="Ex: Paul Yurick " required>
+                </div>
 
-                    <form action="dashboard-client.html" method="POST" class="auth-form">
-                        <div class="form-group">
-                            <label for="user-name">Nom complet</label>
-                            <input type="text" id="user-name" name="user_name" placeholder="Ex: Jean Junior" required>
-                        </div>
-
-                        <div class="form-group">
+                <div class="form-group">
                             <label for="user-phone">Numéro de téléphone</label>
-                            <input type="text" id="user-phone" name="user_phone" placeholder="Ex: 077 00 00 00" required>
-                        </div>
+                    <input type="text" id="user-phone" name="user_phone" placeholder="Ex: 077 00 00 00" required>
+                </div>
 
-                        <div class="form-group">
+                <div class="form-group">
                             <label for="user-email">Adresse email personnelle</label>
                             <input type="email" id="user-email" name="user_email" placeholder="mon-email@gmail.com" autocomplete="email" required>
-                        </div>
+                </div>
 
-                        <div class="form-group">
-                            <label for="user-password">Mot de passe</label>
+                <div class="form-group">
+                    <label for="user-password">Mot de passe</label>
                             <input type="password" id="user-password" name="user_password" placeholder="Votre mot de passe" autocomplete="new-password" required>
-                        </div>
+                </div>
 
                         <button type="submit" class="btn-submit btn-login">Créer mon compte utilisateur</button>
-                    </form>
+            </form>
                 </section>
 
             </div>
