@@ -24,7 +24,7 @@
                 <a href="index.html#contact">Contacts</a>
             </nav>
 
-            <a href="index.html" class="btn-connect">Retour</a>
+            <a href="inscription2.html" class="btn-connect">Inscription</a>
         </div>
     </header>
 
@@ -32,14 +32,15 @@
         <div class="container auth-container">
             
             <!-- Formulaire PME -->
-            <section class="auth-card" aria-labelledby="pme-login-title">
+            <section class="auth-card pme-card" aria-labelledby="pme-login-title">
                 <div class="auth-card-header">
                     <span class="section-kicker">Connexion PME</span>
                     <h1 id="pme-login-title">Espace professionnel</h1>
                     <p>Connectez-vous pour accéder à votre espace PME.</p>
                 </div>
 
-                <form action="dashboard.html" method="POST" class="auth-form">
+                <!-- method="GET" pour éviter 405 sur GitHub Pages -->
+                <form action="dashboard.html" method="GET" class="auth-form">
                     <div class="form-group">
                         <label for="pme-email">Adresse email</label>
                         <input type="email" id="pme-email" name="email" placeholder="votre-email@domaine.com" autocomplete="username" required>
@@ -59,19 +60,20 @@
                         <a href="#" class="forgot-password">Mot de passe oublié ?</a>
                     </div>
 
-                    <button type="submit" class="btn-submit btn-login">Se connecter (PME)</button>
+                    <button type="submit" class="btn-submit btn-login btn-login-pme">Se connecter (PME)</button>
                 </form>
             </section>
 
             <!-- Formulaire Visiteur -->
-            <section class="auth-card" aria-labelledby="visitor-login-title">
+            <section class="auth-card visitor-card" aria-labelledby="visitor-login-title">
                 <div class="auth-card-header">
                     <span class="section-kicker">Connexion Visiteur</span>
                     <h1 id="visitor-login-title">Espace client</h1>
                     <p>Connectez-vous pour accéder à votre espace client.</p>
                 </div>
 
-                <form action="client.html" method="POST" class="auth-form">
+                <!-- method="GET" pour éviter 405 sur GitHub Pages -->
+                <form action="client.html" method="GET" class="auth-form">
                     <div class="form-group">
                         <label for="visitor-email">Adresse email</label>
                         <input type="email" id="visitor-email" name="email" placeholder="votre-email@domaine.com" autocomplete="username" required>
@@ -91,7 +93,7 @@
                         <a href="#" class="forgot-password">Mot de passe oublié ?</a>
                     </div>
 
-                    <button type="submit" class="btn-submit btn-login">Se connecter (Visiteur)</button>
+                    <button type="submit" class="btn-submit btn-login btn-login-visitor">Se connecter (Visiteur)</button>
                 </form>
             </section>
 
